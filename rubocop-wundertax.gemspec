@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name = "rubocop-wundertax"
   s.version = "1.0.0"
   s.summary = "RuboCop Wundertax"
-  s.description = "Code style checking for GitHub Ruby repositories"
+  s.description = "Code style checking for Wundertax Ruby repositories"
   s.homepage = "https://github.com/wundertax/rubocop-wundertax"
   s.license = "MIT"
 
