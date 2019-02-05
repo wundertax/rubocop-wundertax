@@ -4,3 +4,15 @@ Naming/FileName:
   Enabled: true
   Exclude:
     - "rubocop-wundertax.gemspec"
+
+Naming/MemoizedInstanceVariableName:
+  EnforcedStyleForLeadingUnderscores: optional
+
+Metrics/BlockLength:
+  Exclude:
+   - !ruby/regexp /_spec\.rb$/
+   - !ruby/regexp /\.gemspec$/
+
+Layout/IndentHeredoc:
+  Exclude:
+  - !ruby/regexp /_generator\.rb$/

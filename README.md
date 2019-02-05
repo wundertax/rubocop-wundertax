@@ -7,13 +7,13 @@ This repository provides recommended RuboCop configuration for use on Wundertax 
 **Gemfile**
 
 ``` ruby
-gem "rubocop-wundertax"
+gem "rubocop-wundertax", git: 'https://github.com/wundertax/rubocop-wundertax.git'
 ```
 
-**.rubocop.yml**
+Create the **.rubocop.yml** file at the root of the repos
 
 ``` yaml
 inherit_gem:
   rubocop-wundertax:
-    - config/default.yml
+    - .rubocop.yml
 ```
