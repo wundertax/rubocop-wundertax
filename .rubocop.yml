@@ -1,9 +1,7 @@
 inherit_from: ./config/default.yml
 
 Naming/FileName:
-  Enabled: true
-  Exclude:
-    - "rubocop-wundertax.gemspec"
+  Enabled: false
 
 Naming/MemoizedInstanceVariableName:
   EnforcedStyleForLeadingUnderscores: optional
