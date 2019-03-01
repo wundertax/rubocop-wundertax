@@ -928,6 +928,8 @@ Style/ZeroLengthPredicate:
 
 Layout/IndentHeredoc:
   EnforcedStyle: squiggly
+  Exclude:
+  - !ruby/regexp /_generator\.rb$/
 
 Lint/AmbiguousOperator:
   Enabled: true
@@ -1176,19 +1178,6 @@ Metrics/BlockLength:
   Exclude:
    - !ruby/regexp /_spec\.rb$/
    - !ruby/regexp /\.gemspec$/
-
-Layout/IndentHeredoc:
-  Exclude:
-  - !ruby/regexp /_generator\.rb$/
-
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
-Style/GlobalVars:
-  Enabled: false
-
-Style/MultilineBlockChain:
-  Enabled: false
 
 Style/TrailingCommaInArrayLiteral:
   Enabled: false
