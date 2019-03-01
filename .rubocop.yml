@@ -1,16 +1,1 @@
 inherit_from: ./config/default.yml
-
-Naming/FileName:
-  Enabled: false
-
-Naming/MemoizedInstanceVariableName:
-  EnforcedStyleForLeadingUnderscores: optional
-
-Metrics/BlockLength:
-  Exclude:
-   - !ruby/regexp /_spec\.rb$/
-   - !ruby/regexp /\.gemspec$/
-
-Layout/IndentHeredoc:
-  Exclude:
-  - !ruby/regexp /_generator\.rb$/
