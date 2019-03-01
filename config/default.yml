@@ -978,7 +978,7 @@ Lint/FormatParameterMismatch:
   Enabled: true
 
 Lint/HandleExceptions:
-  Enabled: true
+  Enabled: false
 
 Lint/ImplicitStringConcatenation:
   Description: Checks for adjacent string literals on the same line, which could
@@ -1158,14 +1158,6 @@ Style/TrailingBodyOnClass:
 Style/TrailingBodyOnModule:
   Enabled: true
 
-Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: comma
-  Enabled: true
-
-Style/TrailingCommaInHashLiteral:
-  EnforcedStyleForMultiline: comma
-  Enabled: true
-
 Layout/SpaceInsideReferenceBrackets:
   EnforcedStyle: no_space
   EnforcedStyleForEmptyBrackets: no_space
@@ -1177,10 +1169,19 @@ Style/ModuleFunction:
 Lint/OrderedMagicComments:
   Enabled: true
 
-Style/FrozenStringLiteralComment:
-  Enabled: false
+Naming/MemoizedInstanceVariableName:
+  EnforcedStyleForLeadingUnderscores: optional
 
-Lint/HandleExceptions:
+Metrics/BlockLength:
+  Exclude:
+   - !ruby/regexp /_spec\.rb$/
+   - !ruby/regexp /\.gemspec$/
+
+Layout/IndentHeredoc:
+  Exclude:
+  - !ruby/regexp /_generator\.rb$/
+
+Style/FrozenStringLiteralComment:
   Enabled: false
 
 Style/GlobalVars:
@@ -1193,7 +1194,4 @@ Style/TrailingCommaInArrayLiteral:
   Enabled: false
 
 Style/TrailingCommaInHashLiteral:
-  Enabled: false
-
-Performance/RedundantBlockCall:
   Enabled: false
