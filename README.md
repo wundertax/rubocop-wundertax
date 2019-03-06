@@ -15,5 +15,5 @@ Create the **.rubocop.yml** file at the root of the repos
 ``` yaml
 inherit_gem:
   rubocop-wundertax:
-    - .rubocop.yml
+    - config/default.yml
 ```

@@ -1177,6 +1177,7 @@ Naming/MemoizedInstanceVariableName:
 Metrics/BlockLength:
   Exclude:
    - !ruby/regexp /_spec\.rb$/
+   - !ruby/regexp /spec\/support\/shared_examples/
    - !ruby/regexp /\.gemspec$/
 
 Style/TrailingCommaInArrayLiteral:
