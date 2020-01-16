@@ -11,6 +11,9 @@ Gem::Specification.new do |s|
   s.files = Dir["README.md", "LICENSE", "config/*.yml"]
 
   s.add_dependency "rubocop", "~> 0.68"
+  s.add_dependency "rubocop-rails"
+  s.add_dependency "rubocop-performance"
+  s.add_dependency "rubocop-rspec"
 
   s.add_development_dependency "rake", "~> 12.0"
 
