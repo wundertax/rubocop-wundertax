@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rubocop-rspec"
 
   s.add_development_dependency "rake", "~> 12.0"
+  s.add_development_dependency "yamllint"
 
   s.required_ruby_version = ">= 2.5.0"
 
