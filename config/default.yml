@@ -10,6 +10,88 @@ inherit_mode:
 AllCops:
   TargetRubyVersion: 2.5
 
+# =============== #
+#   Layout Cops   #
+# =============== #
+
+Layout/ArgumentAlignment:
+  Enabled: true
+  EnforcedStyle: with_first_argument
+
+Layout/CaseIndentation:
+  EnforcedStyle: end
+  AutoCorrect: true
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: start_of_line
+  AutoCorrect: true
+
+Layout/EndOfLine:
+  Enabled: true
+  EnforcedStyle: lf
+
+Layout/ExtraSpacing:
+  AllowForAlignment: true
+  AllowBeforeTrailingComments: false
+  ForceEqualSignAlignment: false
+
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+
+Layout/LineLength:
+  AutoCorrect: false
+  AllowHeredoc: true
+  AllowURI: true
+  Exclude:
+    - spec/**/*.rb
+  IgnoreCopDirectives: false
+  IgnoredPatterns:
+    - '\A\s*(remote_)?test(_\w+)?\s.*(do|->)(\s|\Z)'
+  Max: 130
+  URISchemes:
+    - http
+    - https
+
+Layout/TrailingEmptyLines:
+  EnforcedStyle: final_newline
+
+# ================ #
+#   Linter Cops   #
+# ================ #
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: true
+  Exclude:
+    - spec/**/*_spec.rb
+
+# TODO: Fix this one
+Lint/UriEscapeUnescape:
+  Enabled: false
+
+# ================ #
+#   Metrics Cops   #
+# ================ #
+
+Metrics/BlockLength:
+  Exclude:
+    - '**/spec/**/*_spec.rb'
+    - '**/spec/support/shared_examples*'
+    - '*.gemspec'
+    - config/environment/*.rb
+    - config/initializers/*.rb
+    - spec/**/*.rb
+
+Metrics/ParameterLists:
+  Max: 5
+  CountKeywordArgs: false
+
+# ================ #
+#   Naming Cops   #
+# ================ #
+
 Naming/PredicateName:
   NamePrefix:
   - is_
@@ -18,23 +100,18 @@ Naming/PredicateName:
   Exclude:
   - 'spec/**/*'
 
-Layout/TrailingEmptyLines:
-  EnforcedStyle: final_newline
+Naming/VariableNumber:
+  EnforcedStyle: non_integer
 
-Layout/LineLength:
-  Max: 120
-  AllowHeredoc: true
-  AllowURI: true
-  URISchemes:
-  - http
-  - https
-  IgnoreCopDirectives: false
-  IgnoredPatterns:
-  - '\A\s*(remote_)?test(_\w+)?\s.*(do|->)(\s|\Z)'
+# ================ #
+#    Rails Cops    #
+# ================ #
 
-Metrics/ParameterLists:
-  Max: 5
-  CountKeywordArgs: false
+Rails/ActiveRecordAliases:
+  Enabled: true
+  Exclude:
+    - lib/forms/**/*.rb
+    - spec/lib/forms/**/*.rb
 
 Rails/HttpPositionalArguments:
   Include:
@@ -43,6 +120,65 @@ Rails/HttpPositionalArguments:
 
 Rails/OutputSafety:
   Enabled: true
+
+Rails/SkipsModelValidations:
+  Enabled: true
+  Exclude:
+    - lib/tasks/**/*.rake
+    - spec/**/*.rb
+
+# ================ #
+#    RSpec Cops    #
+# ================ #
+
+RSpec/ContextWording:
+  Enabled: false
+  Prefixes:
+    - and
+    - but
+    - for
+    - if
+    - in
+    - unless
+    - when
+    - with
+    - without
+
+RSpec/DescribeClass:
+  Exclude:
+    - spec/tasks/**/*_spec.rb
+    - spec/requests/**/*_spec.rb
+    - spec/routing/**/*_spec.rb
+    - spec/system/**/*_spec.rb
+
+RSpec/EmptyExampleGroup:
+  Exclude:
+    - spec/api/**/*_spec.rb
+
+RSpec/ExpectChange:
+  Enabled: false
+
+RSpec/MessageSpies:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: true
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Max: 6
+
+# =============== #
+#   Style Cops   #
+# =============== #
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
 
 Style/HashEachMethods:
   Enabled: true
@@ -59,14 +195,19 @@ Style/ModuleFunction:
 Lint/OrderedMagicComments:
   Enabled: true
 
-Metrics/BlockLength:
-  Exclude:
-    - '**/spec/**/*_spec.rb'
-    - '**/spec/support/shared_examples*'
-    - '*.gemspec'
+Style/PercentLiteralDelimiters:
+  Enabled: true
+
+Style/SymbolArray:
+  EnforcedStyle: percent
 
 Style/TrailingCommaInArrayLiteral:
   Enabled: true
+  EnforcedStyleForMultiline: comma
 
 Style/TrailingCommaInHashLiteral:
   Enabled: true
+  EnforcedStyleForMultiline: comma
+
+Style/WordArray:
+  EnforcedStyle: percent
