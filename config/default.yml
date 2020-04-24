@@ -55,6 +55,9 @@ Layout/LineLength:
     - http
     - https
 
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+  
 Layout/TrailingEmptyLines:
   EnforcedStyle: final_newline
 
@@ -66,6 +69,12 @@ Lint/AmbiguousBlockAssociation:
   Enabled: true
   Exclude:
     - spec/**/*_spec.rb
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
 
 # TODO: Fix this one
 Lint/UriEscapeUnescape:
@@ -177,6 +186,9 @@ RSpec/NestedGroups:
 Style/Documentation:
   Enabled: false
 
+Style/ExponentialNotation:
+  Enabled: true
+  
 Style/FrozenStringLiteralComment:
   Enabled: false
 
@@ -211,14 +223,3 @@ Style/TrailingCommaInHashLiteral:
 
 Style/WordArray:
   EnforcedStyle: percent
-
-# NEW COPS AFTER VERSION 0.80
-
-Layout/SpaceAroundMethodCallOperator:
-  Enabled: true
-Lint/RaiseException:
-  Enabled: true
-Lint/StructNewOverride:
-  Enabled: true
-Style/ExponentialNotation:
-  Enabled: true
