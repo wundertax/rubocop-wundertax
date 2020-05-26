@@ -22,6 +22,9 @@ Layout/CaseIndentation:
   EnforcedStyle: end
   AutoCorrect: true
 
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+
 Layout/EndAlignment:
   EnforcedStyleAlignWith: start_of_line
   AutoCorrect: true
@@ -69,6 +72,9 @@ Lint/AmbiguousBlockAssociation:
   Enabled: true
   Exclude:
     - spec/**/*_spec.rb
+
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
 
 Lint/RaiseException:
   Enabled: true
@@ -208,6 +214,9 @@ Lint/OrderedMagicComments:
   Enabled: true
 
 Style/PercentLiteralDelimiters:
+  Enabled: true
+
+Style/SlicingWithRange:
   Enabled: true
 
 Style/SymbolArray:
