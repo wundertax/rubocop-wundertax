@@ -70,6 +70,9 @@ Lint/AmbiguousBlockAssociation:
 Lint/MixedRegexpCaptureTypes:
   Enabled: true
 
+Lint/OrderedMagicComments:
+  Enabled: true
+
 # TODO: Fix this one
 Lint/UriEscapeUnescape:
   Enabled: false
@@ -196,9 +199,6 @@ Style/HashTransformValues:
 Style/ModuleFunction:
   EnforcedStyle: extend_self
 
-Lint/OrderedMagicComments:
-  Enabled: true
-
 Style/PercentLiteralDelimiters:
   Enabled: true
 
@@ -207,7 +207,10 @@ Style/RedundantRegexpCharacterClass:
   
 Style/RedundantRegexpEscape:
   Enabled: true
-  
+
+Style/SlicingWithRange:
+  Enabled: true 
+ 
 Style/SymbolArray:
   EnforcedStyle: percent
 
