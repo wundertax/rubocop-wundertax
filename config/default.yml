@@ -22,9 +22,6 @@ Layout/CaseIndentation:
   EnforcedStyle: end
   AutoCorrect: true
 
-Layout/EmptyLinesAroundAttributeAccessor:
-  Enabled: true
-
 Layout/EndAlignment:
   EnforcedStyleAlignWith: start_of_line
   AutoCorrect: true
@@ -58,9 +55,6 @@ Layout/LineLength:
     - http
     - https
 
-Layout/SpaceAroundMethodCallOperator:
-  Enabled: true
-  
 Layout/TrailingEmptyLines:
   EnforcedStyle: final_newline
 
@@ -73,19 +67,17 @@ Lint/AmbiguousBlockAssociation:
   Exclude:
     - spec/**/*_spec.rb
 
-Lint/DeprecatedOpenSSLConstant:
+Lint/MixedRegexpCaptureTypes:
   Enabled: true
 
-Lint/RaiseException:
-  Enabled: true
-
-Lint/StructNewOverride:
+Lint/OrderedMagicComments:
   Enabled: true
 
 # TODO: Fix this one
 Lint/UriEscapeUnescape:
   Enabled: false
 
+  
 # ================ #
 #   Metrics Cops   #
 # ================ #
@@ -192,9 +184,6 @@ RSpec/NestedGroups:
 Style/Documentation:
   Enabled: false
 
-Style/ExponentialNotation:
-  Enabled: true
-  
 Style/FrozenStringLiteralComment:
   Enabled: false
 
@@ -210,15 +199,18 @@ Style/HashTransformValues:
 Style/ModuleFunction:
   EnforcedStyle: extend_self
 
-Lint/OrderedMagicComments:
-  Enabled: true
-
 Style/PercentLiteralDelimiters:
   Enabled: true
 
-Style/SlicingWithRange:
+Style/RedundantRegexpCharacterClass:
+  Enabled: true
+  
+Style/RedundantRegexpEscape:
   Enabled: true
 
+Style/SlicingWithRange:
+  Enabled: true 
+ 
 Style/SymbolArray:
   EnforcedStyle: percent
 
@@ -232,3 +224,4 @@ Style/TrailingCommaInHashLiteral:
 
 Style/WordArray:
   EnforcedStyle: percent
+
