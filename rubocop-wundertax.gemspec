@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = 'rubocop-wundertax'
-  s.version = '2.0.4'
+  s.version = '2.0.5'
   s.summary = 'RuboCop Wundertax'
   s.description = 'Code style checking for Wundertax Ruby repositories'
   s.homepage = 'https://github.com/wundertax/rubocop-wundertax'

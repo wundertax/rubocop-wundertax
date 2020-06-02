@@ -21,6 +21,9 @@ Layout/ArgumentAlignment:
 Layout/CaseIndentation:
   EnforcedStyle: end
   AutoCorrect: true
+ 
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
 
 Layout/EndAlignment:
   EnforcedStyleAlignWith: start_of_line
@@ -55,6 +58,9 @@ Layout/LineLength:
     - http
     - https
 
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
 Layout/TrailingEmptyLines:
   EnforcedStyle: final_newline
 
@@ -66,11 +72,19 @@ Lint/AmbiguousBlockAssociation:
   Enabled: true
   Exclude:
     - spec/**/*_spec.rb
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
 
 Lint/MixedRegexpCaptureTypes:
   Enabled: true
 
 Lint/OrderedMagicComments:
+  Enabled: true
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
   Enabled: true
 
 # TODO: Fix this one
@@ -183,6 +197,9 @@ RSpec/NestedGroups:
 
 Style/Documentation:
   Enabled: false
+
+Style/ExponentialNotation:
+  Enabled: true
 
 Style/FrozenStringLiteralComment:
   Enabled: false
