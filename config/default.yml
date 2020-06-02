@@ -67,10 +67,14 @@ Lint/AmbiguousBlockAssociation:
   Exclude:
     - spec/**/*_spec.rb
 
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+
 # TODO: Fix this one
 Lint/UriEscapeUnescape:
   Enabled: false
 
+  
 # ================ #
 #   Metrics Cops   #
 # ================ #
@@ -198,6 +202,12 @@ Lint/OrderedMagicComments:
 Style/PercentLiteralDelimiters:
   Enabled: true
 
+Style/RedundantRegexpCharacterClass:
+  Enabled: true
+  
+Style/RedundantRegexpEscape:
+  Enabled: true
+  
 Style/SymbolArray:
   EnforcedStyle: percent
 
@@ -211,3 +221,4 @@ Style/TrailingCommaInHashLiteral:
 
 Style/WordArray:
   EnforcedStyle: percent
+
