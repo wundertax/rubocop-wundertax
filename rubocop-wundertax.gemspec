@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = 'rubocop-wundertax'
-  s.version = '2.0.5'
+  s.version = '2.1.0'
   s.summary = 'RuboCop Wundertax'
   s.description = 'Code style checking for Wundertax Ruby repositories'
   s.homepage = 'https://github.com/wundertax/rubocop-wundertax'
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir['README.md', 'LICENSE', 'config/*.yml']
 
-  s.add_dependency 'rubocop', '~> 0.85'
+  s.add_dependency 'rubocop', '~> 0.88'
   s.add_dependency 'rubocop-performance'
   s.add_dependency 'rubocop-rails'
   s.add_dependency 'rubocop-rspec'
