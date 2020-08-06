@@ -73,23 +73,50 @@ Lint/AmbiguousBlockAssociation:
   Exclude:
     - spec/**/*_spec.rb
 
+Lint/BinaryOperatorWithIdenticalOperands: # (0.89)
+  Enabled: true 
+
 Lint/DeprecatedOpenSSLConstant:
   Enabled: true
 
 Lint/DuplicateElsifCondition:
   Enabled: true
 
+Lint/DuplicateRescueException: # (0.89)
+  Enabled: true 
+
+Lint/EmptyConditionalBody: # (0.89)
+  Enabled: true 
+
+Lint/FloatComparison: # (0.89)
+  Enabled: true 
+
+Lint/MissingSuper: # (0.89)
+  Enabled: true 
+ 
 Lint/MixedRegexpCaptureTypes:
   Enabled: true
 
 Lint/OrderedMagicComments:
   Enabled: true
 
+Lint/OutOfRangeRegexpRef: # (0.89)
+  Enabled: true 
+
 Lint/RaiseException:
   Enabled: true
 
+Lint/SelfAssignment: # (0.89)
+  Enabled: true 
+
 Lint/StructNewOverride:
   Enabled: true
+
+Lint/TopLevelReturnWithArgument: # (0.89)
+  Enabled: true 
+
+Lint/UnreachableLoop: # (0.89)
+  Enabled: true 
 
 # TODO: Fix this one
 Lint/UriEscapeUnescape:
@@ -166,12 +193,45 @@ Rails/ActiveRecordAliases:
     - lib/forms/**/*.rb
     - spec/lib/forms/**/*.rb
 
+Rails/ActiveRecordCallbacksOrder: # (2.7)
+  Enabled: true
+
+Rails/FindById: # (2.7)
+  Enabled: true
+
+Rails/Inquiry: # (2.7)
+  Enabled: true
+
 Rails/HttpPositionalArguments:
   Include:
     - spec/**/*
     - test/**/*
 
+Rails/MailerName: # (2.7)
+  Enabled: true
+
+Rails/MatchRoute: # (2.7)
+  Enabled: true
+
+Rails/NegateInclude: # (2.7)
+  Enabled: true
+
 Rails/OutputSafety:
+  Enabled: true
+
+Rails/Pluck: # (2.7)
+  Enabled: true
+
+Rails/PluckInWhere: # (2.7)
+  Enabled: true
+
+Rails/RenderInline: # (2.7)
+  Enabled: true
+
+Rails/RenderPlainText: # (2.7)
+  Enabled: true
+
+Rails/ShortI18n: # (2.7)
   Enabled: true
 
 Rails/SkipsModelValidations:
@@ -179,6 +239,9 @@ Rails/SkipsModelValidations:
   Exclude:
     - lib/tasks/**/*.rake
     - spec/**/*.rb
+
+Rails/WhereExists: # (2.7)
+  Enabled: true
 
 # ================ #
 #    RSpec Cops    #
@@ -243,11 +306,17 @@ Style/CaseLikeIf:
 Style/Documentation:
   Enabled: false
 
+Style/ExplicitBlockArgument: # (0.89)
+  Enabled: true
+
 Style/ExponentialNotation:
   Enabled: true
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+Style/GlobalStdStream: # (0.89)
+  Enabled: true
 
 Style/HashEachMethods:
   Enabled: true
@@ -267,6 +336,9 @@ Style/HashTransformValues:
 Style/ModuleFunction:
   EnforcedStyle: extend_self
 
+Style/OptionalBooleanParameter: # (0.89)
+  Enabled: true
+
 Style/PercentLiteralDelimiters:
   Enabled: true
 
@@ -285,9 +357,15 @@ Style/RedundantRegexpCharacterClass:
 Style/RedundantRegexpEscape:
   Enabled: true
 
+Style/SingleArgumentDig: # (0.89)
+  Enabled: true
+  
 Style/SlicingWithRange:
   Enabled: true 
  
+Style/StringConcatenation: # (0.89)
+  Enabled: true
+
 Style/SymbolArray:
   EnforcedStyle: percent
 
