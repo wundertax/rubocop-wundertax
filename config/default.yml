@@ -8,6 +8,7 @@ inherit_mode:
     - Exclude
 
 AllCops:
+  NewCops: enable
   TargetRubyVersion: 2.5
 
 # =============== #
@@ -279,6 +280,9 @@ RSpec/MessageSpies:
 
 RSpec/MultipleExpectations:
   Enabled: true
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
 
 RSpec/NamedSubject:
   Enabled: false
