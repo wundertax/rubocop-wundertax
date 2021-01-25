@@ -1,5 +1,6 @@
 require: 
   - rubocop-performance
+  - rubocop-rake
   - rubocop-rails
   - rubocop-rspec
 
@@ -9,7 +10,7 @@ inherit_mode:
 
 AllCops:
   NewCops: enable
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 2.6
 
 # =============== #
 #   Layout Cops   #
